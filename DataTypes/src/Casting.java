@@ -13,6 +13,18 @@ public class Casting {
         int a = 30;
         int b = 12;
         System.out.println((double)a/b);
+
+        //Autocast
+        //double c = a/b; = 2.0
+        double c = (double)a/b; //2.5
+        System.out.println(c);
+
+        char n = '1';
+        int nI = n;
+        System.out.println(nI); //Valor ASCII 49
+
+        short nS = (short) n; //char es mas grande que short
+        System.out.println(nS);
     }
 
 }
