@@ -1,3 +1,5 @@
 /.idea/*
+!/.out/DataTypes.jar
 /out/*
 DataTypes.iml
+/src/META-INF/MANIFEST.MF
