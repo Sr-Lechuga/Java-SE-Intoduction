@@ -1,6 +1,6 @@
 public class SwitchCase {
     public static void main(String[] args) {
-        String colorModeSelected = "1";
+        String colorModeSelected = "Dark";
 
         switch (colorModeSelected){
             case "Light":
