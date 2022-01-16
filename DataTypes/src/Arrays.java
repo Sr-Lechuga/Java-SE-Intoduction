@@ -22,12 +22,17 @@ public class Arrays {
         androidVersions[2] = "Cupcake";
         androidVersions[3] = "Donut";
 
-        System.out.println(androidVersions[0]);
-        System.out.println(androidVersions[1]);
-        System.out.println(androidVersions[2]);
-        System.out.println(androidVersions[3]);
+        for (int i = 0; i < androidVersions.length; i++) {
+            System.out.println(i + "." +androidVersions[i]);
+        }
 
-        System.out.println();
+        for (String androidVersion : androidVersions){
+            System.out.println(androidVersion);
+        }
+
+        for (int i = 0; i < days.length; i++) {
+            System.out.println(days[i]);
+        }
 
         cities [0][0] = "Colombia";
         cities [0][1] = "CDMX";
@@ -38,20 +43,34 @@ public class Arrays {
         cities [3][0] = "Uruguay";
         cities [3][1] = "Canelones";
 
-        System.out.print(cities[0][0] + " ");
-        System.out.println(cities[0][1]);
-        System.out.print(cities[1][0] + " ");
-        System.out.println(cities[1][1]);
-        System.out.print(cities[2][0] + " ");
-        System.out.println(cities[2][1]);
-        System.out.print(cities[3][0] + " ");
-        System.out.println(cities[3][1]);
+        for (int i = 0; i < cities.length; i++) {
+            System.out.println();
+            for (int j = 0; j < cities[i].length; j++) {
+                System.out.print(cities[i][j] + " ");
+            }
+        }
+        System.out.println("\n");
 
-        System.out.println();
+        for (String[] pair : cities){
+            System.out.println();
+            for (String name : pair){
+                System.out.print(name + " ");
+            }
+        }
+
+        System.out.println("\n");
 
         String [][][][] animals = new String[2][3][2][2];
         animals[1][0][0][1] = "Monkey";
 
-        System.out.println(animals[1][0][0][1]);
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 2; k++) {
+                    for (int l = 0; l < 2; l++) {
+                        System.out.println(animals[i][j][k][l]);
+                    }
+                }
+            }
+        }
     }
 }
